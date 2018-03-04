@@ -1,0 +1,301 @@
+---
+---
+
+@import "{{ site.theme }}";
+// SETTINGS.SASS //
+// Colors //
+$color__salmon:         #f4645f;
+$color__darker_salmon:  #e74430;
+$color__faint:          #f0f2f1;
+$color__gray:           #525252;
+$color__light_gray:     #aeaeae;
+$color__lighter_gray:   #dee0df;
+$color__teal:           #27b4a8;
+$color__blue:           #64B5F6;
+
+// Fonts //
+$font:         'Source Sans Pro', sans-serif;
+$font_alt:     'Miriam Libre', 'Source Sans Pro', sans-serif;
+$font_code:    'Operator Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', monospace;
+
+// BASE.SASS //
+* { box-sizing: border-box; }
+
+body {
+    color: $color__gray;
+    font-family: $font;
+    font-size: 16px;
+    background: #fff url('../cloud-bar.png') repeat-x;
+    padding-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-header {
+    display: none;
+    color: #fff;
+    text-align: center;
+    background-color: #f4645f;
+    background-image: linear-gradient(120deg, #f4645f, #e69693);
+}
+
+// DOCS.SASS //
+.main-content {
+    color: $color__gray;
+    font-family: $font;
+
+    a {
+        color: $color__salmon;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 200;
+    }
+
+    p {
+        line-height: 1.5;
+        margin: 10px 0 20px;
+        strong { -webkit-font-smoothing: antialiased; }
+    }
+
+    code, kbd, pre, samp { 
+        font-family: $font_code; 
+    }
+    
+    pre.highlight {
+        border: none;
+        box-shadow: 0 1px 1px rgba(0,0,0,.125);
+        background: $color__faint;
+        code {
+            // color: $color__salmon;
+            // font-weight: 400;
+            font-size: 11px;
+            text-shadow: 0 1px 0px #fff;
+        }
+    }
+
+    code.highlighter-rouge {
+        background: $color__faint;
+        color: $color__salmon;
+        padding: 1px 5px;
+        border-radius: 3px;
+        // font-weight: 400;
+        font-size: 11px;
+        text-shadow: 0 1px 0px #fff;
+        box-shadow: 0 1px 1px rgba(0,0,0,.125);
+    }
+    
+    code.highlighter-rouge.language-php {
+        color: $color__blue;
+    }
+
+    .highlight {
+        .p, .sd { color: #999;}
+        .s1 { color: #2E7D32;}
+        .kc { font-weight: normal; color: $color__salmon;}
+        .k { font-weight: normal; color: #07a;}
+        .nv { color: $color__blue;}
+        .o, .nb, .nf { color: $color__gray;}
+        .nx, .nc { color: $color__gray;}
+    }
+
+    pre code, kbd, pre, samp {
+        color: $color__gray;
+        font-size: 11px;
+    }
+
+    blockquote {
+        background: $color__salmon;
+        color: #fff;
+        border-radius: 3px;
+        margin: 10px 0 20px;
+        padding: 10px 15px;
+        border: none;
+        box-shadow: 0 1px 1px rgba(0,0,0,.125);
+
+        p:last-child { margin: 0; }
+        a { color: #fff; }
+    }
+
+    blockquote.tip {
+        background-color: $color__blue;
+    }
+    
+    ul {
+        font-size: 14px;
+    }
+
+    ul li {
+        margin: 8px;
+        line-height: 1.65;
+    }
+
+    p {
+        font-size: 14.5px;
+        line-height: 1.70;
+    }
+
+    h1 + ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $color__faint;
+        -webkit-font-smoothing: antialiased;
+        li {
+            margin: 0px;
+            line-height: 1.65;
+
+            &:before {
+                content: "# ";
+                margin-right: .25em;
+                color: $color__salmon;
+                opacity: .3;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    li > ul {
+        font-size: 15px;
+        font-weight: 400;
+        list-style: none;
+    }
+
+    h2:first-of-type {
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 55px;
+        margin-bottom: 15px;
+        position: relative;
+
+        a,
+        a:hover {
+            color: $color__gray;
+            text-decoration: none;
+        }
+        a:before {
+            content: "#";
+            margin-left: -25px;
+            position: absolute;
+            font-size: 28px;
+            color: $color__salmon;
+            opacity: .6;
+        }
+
+        code.highlighter-rouge {
+            font-size: 25px;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: underline;
+        &:hover {
+            color: darken($color__salmon, 10%);
+        }
+    }
+
+    blockquote a:hover {
+        color: lighten($color__salmon, 25%);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+        th,
+        td {
+            border: 1px solid $color__lighter_gray;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            font-size: 16px;
+        }
+    }
+
+    blockquote {
+        padding: 1rem;
+        margin-left: 0;
+        color: #f3f6fa;
+        font-size: 1rem;
+    }
+}
+
+.main-content {
+    h1,h2,h3,h4,h5,h6 {
+        color: $color__gray;
+    }
+}
+
+.main-content blockquote {
+    padding: 1rem;
+    margin-left: 0;
+    color: #f3f6fa;
+    font-size: 1rem;
+}
+
+.main-content .svg svg {
+    width: 24px;
+}
+
+.main-content #search-input:focus {
+    box-shadow: none;
+    outline: 0;
+    border-color: #F4645F;
+}
+
+.docs-wrapper {
+    overflow: hidden;
+}
+
+@media (max-width:1080px) {
+
+    .main-content {
+        margin-left: 200px;
+        padding: 15px 30px 30px;
+        h2 a:before {
+            margin-left: -20px;
+        }
+    }
+}
+
+@media (max-width:780px) {
+
+    .main-content {
+        margin-left: 0px;
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
+
+// HOME.SASS //
+// HOME.SASS //
