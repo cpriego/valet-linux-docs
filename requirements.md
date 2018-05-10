@@ -14,7 +14,7 @@
 Requirement | Description
 ------------- | -------------
 Ubuntu version | 14.04+
-OS packages | `sudo apt-get install network-manager libnss3-tools jq xsel`
+OS packages | `sudo apt-get install libnss3-tools jq xsel`
 PHP version | 5.6+
 PHP extensions | `php*-cli php*-curl php*-mbstring php*-mcrypt php*-xml php*-zip`
 Optional packages | `php*-sqlite3 php*-mysql php*-pgsql`
@@ -70,7 +70,7 @@ Permanent:
 
 Requirement | Description
 ------------- | -------------
-OS packages | `pacman -S nss jq xsel networkmanager`
+OS packages | `pacman -S nss jq xsel`
 PHP version | `pacman -S php` ( need **>= 5.6** ; check version with `php -v` after installing)
 PHP extensions | `php-mcrypt` ( `php` package comes with a lot of compiled in modules. Including `cli, curl, mbstring, xml, zip`. If you don't find an extension, it could be that it is now a part of the `php` package. To check compiled in modules run `php -m`)
 Optional packages | [php-sqlite](https://wiki.archlinux.org/index.php/PHP#Sqlite), [mysql/mariadb](https://wiki.archlinux.org/index.php/PHP#MySQL.2FMariaDB), [php-pgsql](https://wiki.archlinux.org/index.php/PHP#PostgreSQL)
