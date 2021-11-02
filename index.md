@@ -275,6 +275,8 @@ If you would like to define a custom Valet driver for a single application, crea
 
 Command  | Description
 ------------- | -------------
+`valet help` | Displays help for a command.
+`valet list` | Lists all Valet commands.
 `valet forget` | Remove a "parked" directory from the list.
 `valet paths` | View all of your "parked" paths.
 `valet restart` | Restart the Valet services.
@@ -282,5 +284,3 @@ Command  | Description
 `valet stop` | Stop the Valet services.
 `valet status` | View Valet services status.
 `valet uninstall` | Uninstall the Valet services entirely.
-
-
