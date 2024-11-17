@@ -81,4 +81,4 @@ Composer | Install [composer](https://wiki.archlinux.org/index.php/PHP#Composer)
 
 Valet makes automatic use of **`sudo`** to perform some of its tasks. This implies that for Valet to perform correctly your user needs to be configured as a **sudo** user.
 
-Please **do not, under any circumstance, install valet with `root` or the `sudo` command**. Kittens could die.
+Please **do not, under any circumstance, install valet with `root` or the `sudo` command**. Kittens could die!.
