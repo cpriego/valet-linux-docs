@@ -1,3 +1,13 @@
+# Documentation Moved to a New Branch
+
+The documentation is no longer hosted here. You can find the latest version in the `gh-pages` branch of the main repository:
+
+[Visit the current documentation on GitHub](https://github.com/cpriego/valet-linux/tree/gh-pages)
+
+---
+
+
+
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/cpriego/valet-linux-docs@master/assets/valet-logo.png" width=></p>
 
 ## Introduction
