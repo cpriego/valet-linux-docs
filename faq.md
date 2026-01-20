@@ -78,7 +78,7 @@ Path: LaravelValetCASelfSigned
 cd ~/.valet/CA
 ```
 
-[Relate Issue](https://github.com/cpriego/valet-linux/issues/233)
+[Related Issue](https://github.com/cpriego/valet-linux/issues/233)
 
 ## Any other tips?
 
